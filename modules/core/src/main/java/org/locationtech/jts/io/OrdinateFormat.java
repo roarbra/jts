@@ -91,9 +91,10 @@ public class OrdinateFormat
   }
 
   private static DecimalFormat createFormat(int maximumFractionDigits) {
-    // specify decimal separator explicitly to work in all locales
+    // specify decimal separator and minus sign explicitly to work in all locales
     DecimalFormatSymbols symbols = new DecimalFormatSymbols();
     symbols.setDecimalSeparator('.');
+    symbols.setMinusSign('-');
     DecimalFormat format = new DecimalFormat("0", symbols);
     format.setMaximumFractionDigits(maximumFractionDigits);
     return format;
