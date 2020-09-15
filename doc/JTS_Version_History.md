@@ -24,11 +24,14 @@ Distributions for older JTS versions can be obtained at the
 ### Functionality Improvements
 
 * Improve Orientation.isCCW to handle flat topology collapse (#588)
+* Add `KMLReader` (#593)
+* Add `Densifier.setValidated` method to allow disabling expensive polygon validation (#595)
 
 ### Bug Fixes
 
 * Fix `RayCrossingCounter` to handle XYZM coordinates (#589)
 * Fix `PackedCoordinateSequence` to always use XYZM coordinates when dimension is 4 (#591)
+* Fix `OrdinateFormat` to work around a JDK issue with the minus sign character in `Locale.NO` (#596)
 
 <!-- ================================================================ -->
 
